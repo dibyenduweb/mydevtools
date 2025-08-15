@@ -9,10 +9,14 @@ const AiImageGenerator = () => {
   const [imageSize, setImageSize] = useState("512x512");
   const downloadRef = useRef(null);
 
-  // API key from .env
   const HF_API_KEY = import.meta.env.VITE_HF_API_KEY;
 
   const generateImage = async () => {
+    if (!HF_API_KEY) {
+      toast.error("Hugging Face API key is not set. Please add VITE_HF_API_KEY to your .env file.");
+      setIsLoading(false);
+      return;
+    }
     if (!prompt.trim()) {
       toast.error("Please enter a prompt");
       return;

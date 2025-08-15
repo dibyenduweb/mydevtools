@@ -9,9 +9,8 @@ const AiImageGenerator = () => {
   const [imageSize, setImageSize] = useState("512x512");
   const downloadRef = useRef(null);
 
-  // Free Hugging Face API key (limited usage)
-  const HF_API_KEY = "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"; 
-  // Note: In production, use environment variables
+  // API key from .env
+  const HF_API_KEY = import.meta.env.VITE_HF_API_KEY;
 
   const generateImage = async () => {
     if (!prompt.trim()) {

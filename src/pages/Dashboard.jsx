@@ -21,7 +21,7 @@ const Dashboard = () => {
       <div className="space-y-2 dark:text-white">
         <div className="flex items-center gap-2">
           <FaTools />
-          <span>Tool Name: DevTools</span>
+          <span>Tool Name: DevTool</span>
         </div>
         <div className="flex items-center gap-2">
           <FaUserTie />

@@ -10,9 +10,9 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# devtools-clone (React + Vite + Tailwind + React Router)
+# DevTool-clone (React + Vite + Tailwind + React Router)
 
-A starter template that replicates the layout of the DevTools web app with:
+A starter template that replicates the layout of the DevTool web app with:
 
 - Responsive sidebar (hamburger on mobile)
 - React Router DOM routing
@@ -27,9 +27,9 @@ A starter template that replicates the layout of the DevTools web app with:
 
 ```bash
 # Create the project
-npm create vite@latest devtools-clone -- --template react
+npm create vite@latest DevTool-clone -- --template react
 
-cd devtools-clone
+cd DevTool-clone
 
 # Install dependencies
 npm install react-router-dom react-icons

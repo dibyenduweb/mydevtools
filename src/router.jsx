@@ -14,6 +14,7 @@ import ImageConverter from "./pages/ImageConverter";
 import Markdown from "./pages/Markdown";
 import CronCalculator from "./pages/CronCalculator";
 import QrGenerator from "./pages/QrGenerator";
+import AiImageGenerator from "./pages/AiImageGenerator";
 
 const Router = () => {
   return (
@@ -22,7 +23,7 @@ const Router = () => {
       <Route path="/json-viewer" element={<JsonViewer />} />
       <Route path="/text-compare" element={<TextCompare />} />
       <Route path="/generate-qr" element={<QrGenerator />} />
-
+      <Route path="/ai-image" element={<AiImageGenerator />} />
       <Route path="/uuid-generator" element={<UuidGenerator />} />
       <Route path="/base64-converter" element={<Base64Converter />} />
       <Route path="/jwt-decoder" element={<JwtDecoder />} />

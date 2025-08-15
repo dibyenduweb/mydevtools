@@ -4,7 +4,7 @@ import {
   FaCodeBranch,
   FaCheckCircle,
   FaFileCode,
-  FaColumns,
+  FaBrain,
   FaHashtag,
   FaMarkdown,
 } from "react-icons/fa";
@@ -72,11 +72,11 @@ const Dashboard = () => {
 
           {/* Card 2 */}
           <Link
-            to="/text-compare"
+            to="/ai-image"
             className="flex flex-col items-center gap-2 p-4 border rounded-xl hover:shadow dark:border-gray-700"
           >
-            <FaColumns className="text-3xl" />
-            <span>Text Compare</span>
+            <FaBrain className="text-3xl" />
+            <span>Ai Image Generator</span>
           </Link>
 
           {/* Card 3 */}
@@ -103,4 +103,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-

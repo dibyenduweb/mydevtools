@@ -90,6 +90,7 @@ import {
   FaImage,
   FaMarkdown,
   FaClock,
+  FaBrain,
 } from "react-icons/fa";
 
 const Sidebar = ({ isOpen, setIsOpen, toggleDark }) => {
@@ -110,6 +111,7 @@ const Sidebar = ({ isOpen, setIsOpen, toggleDark }) => {
     { name: "Image Converter", path: "/image-converter", icon: <FaImage /> },
     { name: "Markdown", path: "/markdown", icon: <FaMarkdown /> },
     { name: "Cron Calculator", path: "/cron-calculator", icon: <FaClock /> },
+    { name: "Ai Image Generator", path: "/ai-image", icon: <FaBrain  /> },
   ];
 
   return (

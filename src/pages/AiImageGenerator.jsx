@@ -9,7 +9,7 @@ const AiImageGenerator = () => {
   const [imageSize, setImageSize] = useState("512x512");
   const downloadRef = useRef(null);
 
-  const HF_API_KEY = import.meta.env.VITE_HF_API_KEY;
+  const HF_API_KEY = "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";
 
   const generateImage = async () => {
     if (!HF_API_KEY) {

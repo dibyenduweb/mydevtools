@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import JsonViewer from "./pages/JsonViewer";
 import TextCompare from "./pages/TextCompare";
-import CaseConverter from "./pages/CaseConverter";
 import UuidGenerator from "./pages/UuidGenerator";
 import Base64Converter from "./pages/Base64Converter";
 import JwtDecoder from "./pages/JwtDecoder";
@@ -14,6 +13,7 @@ import CsvJson from "./pages/CsvJson";
 import ImageConverter from "./pages/ImageConverter";
 import Markdown from "./pages/Markdown";
 import CronCalculator from "./pages/CronCalculator";
+import QrGenerator from "./pages/QrGenerator";
 
 const Router = () => {
   return (
@@ -21,7 +21,8 @@ const Router = () => {
       <Route path="/" element={<Dashboard />} />
       <Route path="/json-viewer" element={<JsonViewer />} />
       <Route path="/text-compare" element={<TextCompare />} />
-      <Route path="/case-converter" element={<CaseConverter />} />
+      <Route path="/generate-qr" element={<QrGenerator />} />
+
       <Route path="/uuid-generator" element={<UuidGenerator />} />
       <Route path="/base64-converter" element={<Base64Converter />} />
       <Route path="/jwt-decoder" element={<JwtDecoder />} />

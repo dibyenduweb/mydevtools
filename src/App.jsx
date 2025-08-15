@@ -47,6 +47,9 @@
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Router from "./router";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const App = () => {
   const [isDark, setIsDark] = useState(false);
@@ -79,6 +82,7 @@ const App = () => {
           </div>
 
           <div className="p-5">
+            <ToastContainer position="top-right" />
             <Router />
           </div>
         </div>
